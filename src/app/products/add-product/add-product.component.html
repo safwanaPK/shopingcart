@@ -1,0 +1,58 @@
+<div class="container border p-3 mt-3 mb-3">
+    <h2 class=text-center>add new productdetails
+    </h2>
+    <form class="row g-3" [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+        <div class="col-md-6">
+            <label for="">product Id</label>
+            <input type="text" class="form-control" formControlName="id">
+        </div>
+        <div class="col-md-6">
+            <label for=""> product name</label>
+            <input type="text" class="form-control" formControlName="productName">
+        </div>
+        <div class="col-md-6">
+            <label for="">category Id</label>
+            <input type="text" class="form-control" formControlName="categoryId">
+        </div>
+        <div class="col-md-6">
+            <label for="">product description</label>
+            <input type="text" class="form-control" formControlName="description">
+        </div>
+        <div class="col-md-6">
+            <label for="">product price</label>
+            <input type="text" class="form-control" formControlName="price">
+        </div>
+        <div class="col-md-6">
+            <label for="">product available</label>
+            <input type="text" class="form-control" placeholder="yes/no" formControlName="is_available">
+        </div>
+        <div class="col-md-6">
+            <label for="">product image</label>
+            <input type="text" class="form-control" formControlName="productImg">
+        </div>
+
+        <div class="col-md-6">
+            <label for="">rating</label>
+            <input type="text" class="form-control" formControlName="rating">
+        </div>
+        <div class="col-md-6">
+            <label for="">Product Review</label>
+            <input type="text" class="form-control" formControlName="review">
+        </div>
+
+        <div class="col-md-6">
+            <label for="">product vendor name</label>
+            <input type="text" class="form-control" formControlName="vendor_name">
+        </div>
+        <div class="col-md-6">
+            <label for="">product Warranty</label>
+            <input type=" text" class="form-control" formControlName="warranty">
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">submit</button>
+
+        </div>
+
+    </form>
+</div>

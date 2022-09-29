@@ -1,0 +1,60 @@
+<div class="container border p-3 mt-3 mb-3">
+    <h2 class=text-center>update productdetails
+    </h2>
+    <form (ngSubmit)="updateProduct(updateProductForm)" #updateProductForm="ngForm" class=" row g-3">
+        <div class="col-md-6">
+            <label for="">product Id</label>
+            <input type=" text" name="id" [(ngModel)]="productDetails.id" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for=""> product name</label>
+            <input type=" text" name="productName" [(ngModel)]="productDetails.productName" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">categoryId </label>
+            <input type=" text" name="categoryId" [(ngModel)]="productDetails.categoryId" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">product description</label>
+            <input type=" text" name="description" [(ngModel)]=" productDetails.description" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">product price</label>
+            <input type=" text" name="price" [(ngModel)]=" productDetails.price" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">product availability</label>
+            <input type=" text" name="is_available" [(ngModel)]=" productDetails.is_available" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">product image</label>
+            <input type=" text" name="productImg" [(ngModel)]=" productDetails.productImg" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">product rating</label>
+            <input type=" text" name="rating" [(ngModel)]=" productDetails.rating" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="">product review</label>
+            <input type=" text" name="review" [(ngModel)]=" productDetails.review" class="form-control">
+        </div>
+        <div class=" col-md-6">
+            <label for="">product vendor name</label>
+            <input type=" text" name="vendor_name" [(ngModel)]=" productDetails.vendor_name" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+            <label for="">product warranty</label>
+            <input type=" text" name="warranty" [(ngModel)]=" productDetails.warranty" class="form-control">
+        </div>
+
+
+
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">update product</button>
+
+        </div>
+
+    </form>
+</div>
